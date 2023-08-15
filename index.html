@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="./css/index.css" rel="stylesheet" type="text/css" />
+    <script defer src="./js/index.js"></script>
+    <title>전자 계약서</title>
+  </head>
+  <body>
+    <header id="header">
+      <p>계약서</p>
+    </header>
+    <main>
+      <div id="content">
+        <div class="explanation-wrapper">
+          <div class="explanation">
+            <p style="line-height: 2rem">
+              <input
+                id="client-input"
+                class="inputs"
+                placeholder="갑의 이름"
+                style="width: 80px"
+              />
+              (이하 "갑")과(와)
+              <input
+                id="provider-input"
+                class="inputs"
+                placeholder="을의 이름"
+                style="width: 80px"
+              />(이하 "을")은(는)
+              <input class="inputs" placeholder="계약의 내용을 작성하세요." />
+              과 관련하여
+              <span style="border-bottom: 1px solid black">다음</span>과 같이
+              합의한다.
+            </p>
+          </div>
+
+          <div class="next">다음</div>
+
+          <div class="explanation-content">
+            <div class="explanation-detail-wrapper">
+              <span class="explanation-title"
+                >제 1조(계약의 목적)
+                <input class="inputs" placeholder="계약의 목적을 작성하세요."
+              /></span>
+            </div>
+            <div class="explanation-detail-wrapper">
+              <span class="explanation-title">제 2조(용어의 정리)</span>
+              <ul>
+                <input
+                  class="inputs"
+                  placeholder="ex. 1. 살이라 함은, 체중을 뜻한다."
+                  style="width: 60%"
+                />
+              </ul>
+            </div>
+            <div class="explanation-detail-wrapper">
+              <span class="explanation-title">제 3조(갑과 을의 의무)</span>
+              <ul>
+                <input
+                  class="inputs"
+                  placeholder="ex. 1. 갑과 을 모두 최선을 다해 다이어트에 임한다."
+                  style="width: 60%"
+                />
+              </ul>
+            </div>
+            <div class="explanation-detail-wrapper">
+              <span class="explanation-title">제 4조(계약의 해지) </span>
+              <ul>
+                <li>
+                  1. 해당 계약은
+                  <input
+                    class="inputs"
+                    placeholder="계약 해지일"
+                    style="width: 100px"
+                  />에 해지된다.
+                </li>
+                <li>
+                  2. 중도해지는
+                  <input class="inputs" placeholder="중도해지 조건" />
+                </li>
+              </ul>
+            </div>
+            <div class="explanation-detail-wrapper">
+              <span class="explanation-title">
+                제 5조(계약의 해지) 이 계약과 발생하는 당사자 간의 모든 분쟁은
+                <input
+                  class="inputs"
+                  placeholder="분쟁의 담당자"
+                  style="width: 120px"
+                />이(가) 담당한다.
+              </span>
+            </div>
+          </div>
+
+          <div class="date-wrapper">
+            <p>2023. 08. 15</p>
+          </div>
+
+          <div class="confirm-wrapper">
+            <div class="client">
+              <p>갑 <span id="client-value"></span> (인)</p>
+              <p>
+                (주소)
+                <input
+                  class="inputs"
+                  placeholder="갑의 주소를 작성하세요."
+                  style="width: 270px"
+                />
+              </p>
+            </div>
+            <div class="provider">
+              <p>을 <span id="provider-value"></span> (인)</p>
+              <p>
+                (주소)
+                <input
+                  class="inputs"
+                  placeholder="을의 주소를 작성하세요."
+                  style="width: 270px"
+                />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
