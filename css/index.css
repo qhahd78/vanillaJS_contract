@@ -16,6 +16,7 @@ input {
 }
 
 #content {
+  min-width: 700px;
   width: 30%;
   border: 1px solid black;
   margin: 0 auto;
@@ -32,7 +33,7 @@ input {
     .confirm-wrapper {
       display: flex;
       justify-content: center;
-      padding-top: 20px;
+      padding-top: 50px;
 
       .client {
         margin-right: 50px;
@@ -70,5 +71,38 @@ input {
 
   &:focus {
     outline: none;
+  }
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 30px;
+
+  .save-button {
+    font-family: "Pretendard";
+    font-family: 700;
+    font-size: 1.3rem;
+    background-color: white;
+    color: rgb(8, 194, 251);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(8, 194, 251);
+      transition: 0.3s;
+      color: white;
+    }
+  }
+}
+
+.disable-input {
+  display: none;
+}
+
+@media print {
+  .button-container {
+    display: none;
   }
 }

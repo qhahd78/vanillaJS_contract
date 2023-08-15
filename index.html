@@ -12,7 +12,7 @@
     <header id="header">
       <p>계약서</p>
     </header>
-    <main>
+    <main id="main">
       <div id="content">
         <div class="explanation-wrapper">
           <div class="explanation">
@@ -50,7 +50,8 @@
               <span class="explanation-title">제 2조(용어의 정리)</span>
               <ul>
                 <input
-                  class="inputs"
+                  id="term-input"
+                  class="inputs term-input"
                   placeholder="ex. 1. 살이라 함은, 체중을 뜻한다."
                   style="width: 60%"
                 />
@@ -60,7 +61,8 @@
               <span class="explanation-title">제 3조(갑과 을의 의무)</span>
               <ul>
                 <input
-                  class="inputs"
+                  id="duty-input"
+                  class="inputs duty-input"
                   placeholder="ex. 1. 갑과 을 모두 최선을 다해 다이어트에 임한다."
                   style="width: 60%"
                 />
@@ -96,7 +98,7 @@
           </div>
 
           <div class="date-wrapper">
-            <p>2023. 08. 15</p>
+            <p id="date">2023. 08. 15</p>
           </div>
 
           <div class="confirm-wrapper">
@@ -124,6 +126,10 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="button-container">
+        <button class="save-button" onclick="{onSaveFunc()}">저장</button>
+        <button class="save-button" onclick="{htmlToPdf()}">PDF 출력</button>
       </div>
     </main>
   </body>
