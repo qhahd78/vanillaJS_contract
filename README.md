@@ -6,8 +6,7 @@
 
 1. 사이트에 접속하여 빈칸을 채운다. 
 
-예시)
-![image](https://github.com/qhahd78/vanillaJS_contract/assets/64029753/23374f98-3608-4fb7-9154-71a37ae8516e)
+예시)![KakaoTalk_20230815_184242284](https://github.com/qhahd78/vanillaJS_contract/assets/64029753/4d5e5977-4a96-4e4b-bbf3-75837af687be)
 
 
 2. 저장버튼을 누른다.
@@ -15,4 +14,4 @@
 3. PDF 로 출력한다.
 
 출력본)
-![image](https://github.com/qhahd78/vanillaJS_contract/assets/64029753/8366791a-0ec9-424b-821f-1aae8cdae6a6)
+![image](https://github.com/qhahd78/vanillaJS_contract/assets/64029753/ba3eb12b-3a32-4692-91e0-8056bbe09fdf)
