@@ -70,7 +70,6 @@ const onSaveFunc = () => {
         input.classList.contains("duty-input") ||
         input.classList.contains("term-input")
       ) {
-        console.log();
         const inputValue = document.createElement("p");
         inputValue.innerHTML = input.value;
         input.replaceWith(inputValue);
@@ -84,7 +83,6 @@ const onSaveFunc = () => {
 };
 
 const htmlToPdf = () => {
-  console.log("@!!!");
   const newWindow = window.open();
   const html = document.createElement("html");
   const head = document.head.cloneNode(true);
@@ -100,7 +98,6 @@ const htmlToPdf = () => {
 
   newWindow.document.write(html.innerHTML);
   newWindow.document.close();
-  console.log(newWindow.document);
 
   setTimeout(() => {
     newWindow.print();
